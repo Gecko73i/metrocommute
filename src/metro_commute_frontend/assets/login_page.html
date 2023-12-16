@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_page.css">
+    <title>MetroCommute | Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="images/branding2.png" width="250" height="250">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="input-container">
+                <input type="text" id="username" name="username" required placeholder="username">
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" required placeholder="password">
+            </div>
+            <button type="button" id="login_user" name="login_user" onclick="checkLogin()">Login</button>
+            <p id="plain">Or login with</p>
+
+            <button id="internet_identity" onclick="icp_log()">
+               <img src="images/internet_identity.jpg">
+            </button>
+
+            <p id="plain" >No account yet? <u>Sign up now</u></p>
+        </form>
+
+        <!--Alert-->
+        <div id="notification" class="hidden">
+            <p id="notification-text"></p>
+        </div>
+
+    </div>
+
+    <script>
+        function checkLogin() {
+            // Get the entered username and password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username and password match the expected values
+            if (username === "user1" && password === "1234") {
+                showNotification('Log In Success!');
+                // Redirect to another page (replace 'your_redirect_page.html' with the actual page)
+                window.location.href = 'prototype.html';
+            } else {
+                // Display an error message or perform other actions for failed login
+                alert('Incorrect username or password. Please try again.');
+            }
+        }
+
+        function showNotification(message) {
+        var notification = document.getElementById('notification');
+        var notificationText = document.getElementById('notification-text');
+
+        notificationText.textContent = message;
+        notification.classList.add('show');
+
+        setTimeout(function () {
+            notification.classList.remove('show');
+        }, 2000); // Adjust the time as needed
+}
+
+        function icp_log() {
+            // Placeholder function for Facebook login
+            window.location.href = 'prototype.html';
+            showNotification('Internet Identity Authenticated!');
+        }
+
+    </script>
+
+</body>
+</html>

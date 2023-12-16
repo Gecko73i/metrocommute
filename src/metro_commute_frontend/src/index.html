@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="landing.css">
+
+        <!--=============== Image Slider ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <title>MetroCommute | Homepage</title>
+    </head>
+    <body>
+        
+    <div class="slides_container" id="slides_container">
+
+          <!--==================== HEADER ====================-->
+
+          <header class="header" id="header_nav">
+            <nav class="nav container">
+                <a href="#header_section" class="nav__logo">
+                    <img src="images/branding_text2.png" id="branding"  alt="" height="170" width="270">
+                </a>
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#header_section" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about_section" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#icp_section" class="nav__link">ICP</a>
+                        </li>
+                        <li class="nav__item">
+                            <a target="_blank" href="login_page.html" id="go_prototype" >
+                                Explore Demo!
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="slide_one" id="header_section">
+                    
+                            <!--==================== MAIN ====================-->
+                            <main class="main">
+                                <!--==================== HOME ====================-->
+                                <section class="home">
+                                    <div class="home__container container">
+                                        <div class="home__data">
+                                            <span class="home__subtitle">
+                                                <img src="images/app_logo2.png" height="150" width="150">
+                                            </span>
+                                            <h1 class="home__title">Lost In The City Jungle?</h1>
+                                            <p class="home__description">
+                                                Let MetroCommute guide you <br> through the concrete maze!
+                                            </p>
+                                            <a href="#explore_start" class="explore_button">
+                                                Explore
+                                            </a>
+                                        </div>
+
+                                        <div class="home__img">
+                                            <img src="images/iphone3.png" alt="">
+                                            <div class="home__shadow"></div>
+                                        </div>
+                                    </div>
+
+                                    <footer class="home__footer">
+                                        <!--
+                                        <span>(082) ***-***</span>
+                                        <span>|</span> -->
+                                        <span>gecko73iproject@gmail.com</span>
+                                    </footer>
+                                </section>
+                            </main>
+
+                            <!--=============== SCROLLREVEAL ===============-->
+                            <script src="assets/js/scrollreveal.min.js"></script>
+
+                            <!--=============== MAIN JS ===============-->
+                            <script src="assets/js/main.js"></script>
+
+        </section>
+
+        <section class="slide_two" id="explore_start">
+
+            <div class="backstyle">
+                <div class="visual">
+            <img src="images/laptop.gif" class="laptop" alt="">
+                </div>
+            
+            <div class="description">
+
+            <h1>Not Just A Web Mapping App</h1>
+            <p>Experience seamless urban living with MetroCommute – your go-to for smooth navigation,
+                jeepney route guidance, parking ease, and a dynamic marketplace. Whether you're a commuter,
+                tourist, or local business, MetroCommute redefines city life. Revolutionize your experience
+                with technology that connects, navigates, and empowers communities.</p>
+
+                <a href="#features_section" class="button">
+                    Learn more
+                </a>
+
+                <img src="images/features_symbols.png" id="features_symbols" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="slide_three" id="features_section">
+            
+            <div class="features_container">
+                
+            <div class="box">
+                <h1>Navigate</h1><br>
+                    <p>While allowing users to search locations and get directions 
+                        from point A to point B, it goes <b>beyond</b> by guiding commuters 
+                        on <b>jeepney routes.</b></p>
+                    </div>
+
+            <div class="box">
+                <img src="images/navigate.gif" alt="">
+                    </div>
+            
+            <div class="box">
+                <img src="images/park.gif" alt="">
+                </div>
+
+                <div class="box">
+                    <h1>Park</h1><br>
+                    <p>Find Parking, Skip the Hassle! effortlessly discover 
+                        available <b>parking spaces</b>, making your journey through 
+                        busy streets a breeze.</p>
+                </div>
+            
+            <div class="box">
+                <h1>GeoCode</h1><br>
+                <p>Supports both <b>forward</b> and <b>reverse geocoding</b>, 
+                    allowing users to effortlessly convert addresses 
+                    into coordinates and vice versa.</p>
+            </div>
+
+                <div class="box">
+                    <img src="images/geocode.gif" alt="">
+                </div>
+
+            <div class="box">
+                <img src="images/market.gif" alt="">
+            </div>
+
+                <div class="box">
+                    <h1>Market</h1><br>
+                    <p>The market feature lets users explore <b>nearby products</b>, view prices, 
+                        discover discounts, and find sellers' designated locations for 
+                        meetups or delivery times. Users can also make payments seamlessly 
+                        using <b>cryptocurrencies</b>.</p>
+                </div>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/0V4nqLhlMj0?si=3QCFqf9rUQTZAXxK" frameborder="0" allowfullscreen></iframe>
+            <!--<video src="videos/MetroCommute_video.mp4" autoplay controls muted loop></video>-->
+        </div>
+
+        </section>
+
+        <section class="slide_four" id="icp_section">
+
+            <h2>Internet Computer Protocol Integration</h2>
+
+                    <div class="cards_container">
+
+                    <div class="glass_card">
+                        <span class="card_number">01</span>
+                        <div class="card_title">
+                        <h2 class="card_title">Decentralization</h2>
+                        </div>
+                        <img src="images/dapp.jpg"><br><br>
+                        <div class="card_p">
+                        <p class="card_text">MetroCommute is a decentralized system, means you have <b>more 
+                            control over your own data</b>, enhancing your trust and privacy. The system is 
+                            less likely to fail accidentally because it relies on many separate components 
+                            that are not likely to fail at the same time, making the network <b>more resilient</b> 
+                            to system faults.</p>
+                            </div>
+
+                            <a target="_blank" href="https://wiki.internetcomputer.org/wiki/Decentralization_in_ICP#firstHeading" class="explore_button">
+                                Explore
+                            </a>
+                    </div>
+
+                    <div class="glass_card">
+                        <span class="card_number">02</span>
+                        <div class="card_title">
+                        <h2 class="card_title">Internet Computer (ICP) Blockchain</h2>
+                        </div>
+                        <img src="images/icp_blockchain.jpg"><br><br>
+                        <div class="card_p">
+                        <p class="card_text">The Internet Computer's secure protocol guarantees 
+                            reliable message delivery, transparent accountability, and 
+                            resilience without relying on firewalls, backup facilities, 
+                            load balancing services, or failover orchestration. This enhances 
+                            the <b>reliability and security</b> of the MetroCommute</p>
+                            </div>
+
+                            <a target="_blank" href="https://internetcomputer.org/" class="explore_button">
+                                Learn
+                            </a>
+                    </div>
+
+                    <div class="glass_card">
+                        <span class="card_number">03</span>
+                        <div class="card_title">
+                        <h2 class="card_title">Internet Identity Authentication</h2>
+                        </div>
+                        <img src="images/internet_identity2.jpg"><br><br>
+                        <div class="card_p">
+                        <p class="card_text">Internet Identity uses advanced cryptographic authentication, 
+                            which is <b>more secure</b> than traditional username and password systems. This 
+                            method helps <b>protect user privacy</b> and reduces the risk of security 
+                            vulnerabilities</p>
+                        </div>
+
+                            <a target="_blank" href="https://identity.ic0.app/" class="explore_button">
+                                Create
+                            </a>
+                    </div>
+
+                    <div class="glass_card">
+                        <span class="card_number">04</span>
+                        <div class="card_title">
+                        <h2 class="card_title">Crypto Payment</h2>
+                        </div>
+                        <img src="images/crypto_payment.jpg"><br><br>
+                        <div class="card_p">
+                        <p class="card_text">Option for crypto payment can make transactions more efficient 
+                            and potentially <b>less costly</b>, as there are no intermediaries involved. 
+                            Cryptocurrencies operate on blockchain technology, which is inherently secure. 
+                            Transactions are encrypted and can be more <b>difficult to hack</b> than traditional 
+                            payment methods.</p>
+                        </div>
+
+                            <a target="_blank" href="https://internetcomputer.org/docs/current/developer-docs/integrations/bitcoin" class="explore_button">
+                                Learn
+                            </a>
+                    </div>
+
+                    </div>
+
+        </section>
+
+        <section class="slide_five" id="about_section">
+
+            <div class="abouts_container">
+
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="false" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="100" coverflow-effect-depth="1000"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
+                <swiper-slide>
+                  <img src=" images/defi_photo.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/defi_photo2.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/defi_photo3.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/defi_photo4.jpg" />
+                </swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+                <div class= "abouts_box">
+
+                    <h1>When It All Began: Crafting MetroCommute</h1><br>
+
+                    <p>MetroCommute, envisioned by the VinceAngelz—four students from Mapúa Malayan 
+                        Colleges Mindanao—came to life during ICP's Think Hackathon on November 18, 2023. 
+                        Introduced to the Internet Computer Protocol that day, the team, with the 
+                        encouragement of their instructor Sir Vince, enthusiastically embraced the 
+                        challenge of developing a decentralized application deployed on the blockchain. 
+                        Motivated by their personal experiences, the students recognized the pressing 
+                        need for efficient navigation of Davao's jeepney routes. MetroCommute stands 
+                        as a testament to their innovative spirit, addressing real-world challenges 
+                        with technology and driven by their own initiative.</p>
+
+                        <img src="images/vinceangelz.png" alt="">
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+    </body>
+
+    <script>
+
+            const scrolling = document.getElementById('slides_container');
+            const header = document.querySelector('header');
+
+            scrolling.addEventListener('scroll', () => {
+            console.log(scrolling.scrollTop);
+            
+
+            if(scrolling.scrollTop > 300) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        })
+
+    </script>
+
+</html>

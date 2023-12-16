@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "metro_commute_backend": {
+      "main": "src/metro_commute_backend/main.mo",
+      "type": "motoko"
+    },
+    "metro_commute_frontend": {
+      "dependencies": [
+        "metro_commute_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/metro_commute_frontend/src/index.html"
+      },
+      "source": [
+        "src/metro_commute_frontend/assets",
+        "dist/metro_commute_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
